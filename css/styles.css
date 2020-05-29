@@ -74,8 +74,13 @@ header .container {
 .header-info li:not(:last-child) {
   margin-right: 30px;
 }
+.header-info li {
+  display: flex;
+  align-items: center;
+}
 .info-img {
   margin-right: 10px;
+  fill: currentColor;
 }
 header .link {
   display: block;
@@ -147,6 +152,11 @@ footer .container {
   text-transform: uppercase;
   color: #ffffff;
 }
+.footer-social .social-img {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
 .email-address {
   margin-bottom: 9px;
 }
@@ -161,21 +171,13 @@ footer .container {
 /* hero */
 .hero {
   text-align: center;
-  padding: 200px 237px;
-  /* max-width: 1600px;
-  height: 600px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url('../images/hero.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
+  display: flex;
+  justify-content: center;
 }
 .overlay {
   max-width: 1600px;
   height: 600px;
+  padding: 200px 237px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
@@ -228,13 +230,16 @@ footer .container {
   margin-right: 30px;
 }
 .advantage-frame {
+  display: flex;
+  margin-bottom: 30px;
   width: 270px;
   height: 120px;
   background: #f5f4fa;
+  justify-content: center;
+  align-items: center;
 }
 .advantage-img {
   display: inline-block;
-  margin-bottom: 30px;
 }
 .advantage-title {
   margin-top: 0;
@@ -320,6 +325,14 @@ footer .container {
   font-size: 16px;
   line-height: 1.19;
 }
+.social-img {
+  fill: #757575;
+}
+.social-img:hover {
+  fill: #ffffff;
+  background-color: var(--accent-text-color);
+  border-radius: 50%;
+}
 /* clients */
 .clients-title {
   margin-top: 0;
@@ -332,8 +345,25 @@ footer .container {
 .client-list {
   display: flex;
 }
+.client-item {
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
 .client-item:not(:last-child) {
   margin-right: 30px;
+}
+.client-item:hover {
+  border: 1px solid var(--accent-text-color);
+}
+.client-link {
+  color: #afb1b8;
+}
+.client-img {
+  fill: #afb1b8;
+}
+.client-img:hover {
+  fill: var(--accent-text-color);
 }
 /* Portfolio-page */
 .buttons {
