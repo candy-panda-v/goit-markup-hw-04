@@ -167,6 +167,34 @@ footer .container {
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
+.button {
+  display: inline-flex;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+  border: 1px solid #2196f3;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  align-items: center;
+}
+.button:hover,
+.button:focus {
+  color: var(--accent-text-color);
+  background-color: #ffffff;
+}
+.button-img {
+  display: inline-flex;
+  margin-left: 10px;
+  fill: currentColor;
+}
+
 /* Studio-page */
 /* hero */
 .hero {
@@ -197,27 +225,7 @@ footer .container {
   text-transform: uppercase;
   color: #ffffff;
 }
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 32px;
 
-  color: #ffffff;
-  background-color: var(--accent-text-color);
-  border: 1px solid #2196f3;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-}
-.button:hover,
-.button:focus {
-  color: var(--accent-text-color);
-  background-color: #ffffff;
-}
 /* advantages */
 .advantage-list {
   display: flex;
@@ -369,6 +377,26 @@ footer .container {
 .buttons {
   margin-bottom: 50px;
 }
+.filter-button:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+}
+.filter-button:focus,
+.filter-button:hover {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -378,6 +406,8 @@ footer .container {
   height: 404px;
   border: 1px solid #eeeeee;
   border-radius: 5px;
+}
+.project-item:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -415,4 +445,5 @@ footer .container {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
+  color: var(--primary-text-color);
 }
