@@ -423,6 +423,7 @@ footer .container {
   line-height: 1.63;
   text-align: center;
   color: var(--main-title-color);
+  cursor: pointer;
 }
 .project-item a {
   text-decoration: none;
